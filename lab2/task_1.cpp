@@ -16,5 +16,5 @@ int main() {
     cin >> b;
     bool check_a = (a % 2 == 0);
     bool check_b = (b % 2 == 0);
-    ((check_a == true && check_b == false)||(check_a == false && check_b == true)) ? cout << "Only one number is even" : cout << "There's no even nubers or all of them are even";
+    cout << boolalpha << ((check_a && (!check_b))||(check_b && (!check_a)));
 }

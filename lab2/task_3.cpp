@@ -19,10 +19,10 @@ char orient_controller(char S, int N) {
     {
     case 0:
         switch(S) {
-            case 'N': S = 'E'; break;
-            case 'S': S = 'W'; break;
-            case 'W': S = 'N'; break;
-            case 'E': S = 'S'; break;
+            case 'N': S = 'N'; break;
+            case 'S': S = 'S'; break;
+            case 'W': S = 'W'; break;
+            case 'E': S = 'E'; break;
         }
         break;
     case 1:
@@ -43,7 +43,7 @@ char orient_controller(char S, int N) {
         break;
     }
 
-    cout << "New orientation: " << S;
+    cout << "New Direction: " << S;
     cout << endl;
 
     return(S);
@@ -60,9 +60,9 @@ int main() {
     cout << "Commands:\n0 - do not change orientation\n1 - rotate to the right\n2 - turn around";
     cout << endl;
 
-    cout << "Enter orientation: ";
+    cout << "Enter starting Direction: ";
     cin >> S;
-    cout << "Orientation: " << S;
+    cout << "Starting Direction: " << S;
     cout << endl;
 
     cout << "Enter first command: ";
