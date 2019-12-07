@@ -11,12 +11,16 @@ using namespace std;
 
 int main() {
     int N, sum;
+
     cout << "Enter N\n";
     cin >> N;
     sum = 0;
+
     for (int i = 0; i < 2*N; i++) {
         sum = sum + pow(N + i, 2);
     }
+
     cout << "Sum: " << sum;
+    
     return 0;
 }
