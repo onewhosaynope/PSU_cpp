@@ -12,8 +12,10 @@ using namespace std;
 
 int main(){
   int c, x;
+  
   ifstream inputFile("input1.txt");
   ofstream outputFile("output1.txt");
+
   if (inputFile.is_open()) {
     while (inputFile.good()) {
       inputFile >> c;
@@ -26,5 +28,6 @@ int main(){
   } else {
       cout << "Unable to open file";
   }
+  
   return 0;
 }
