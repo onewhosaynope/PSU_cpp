@@ -14,7 +14,7 @@ using namespace std;
 
 void replace_all( string &S, const string &S1, const string &S2 )
 {
-    for (string::size_type pos = 0; ( pos = S.find( S1, pos ) ) != string::npos; pos += S2.size()) {
+    for (string::size_type pos = 0; (pos = S.find(S1, pos)) != string::npos; pos += S2.size()) {
         S.replace( pos, S1.size(), S2 );
     }
 }
