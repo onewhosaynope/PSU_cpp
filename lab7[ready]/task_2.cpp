@@ -36,11 +36,11 @@ int main() {
     string S1;
     string S2;
 
-    cout << "S" << endl; 
+    cout << "Enter S: " << endl; 
     getline(cin, S);
-    cout << "S1" << endl; 
+    cout << "Enter S1: " << endl; 
     cin >> S1;
-    cout << "S2" << endl; 
+    cout << "Enter S2:" << endl; 
     cin >> S2;
     
     cout << replace(S + " ", S1, S2) << endl; 

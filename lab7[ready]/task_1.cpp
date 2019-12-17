@@ -12,20 +12,23 @@
 
 using namespace std;
 
-void replace_all( string &S, const string &S1, const string &S2 )
-{
+void replace_all(string S, string S1, string S2) {
     for (string::size_type pos = 0; (pos = S.find(S1, pos)) != string::npos; pos += S2.size()) {
         S.replace( pos, S1.size(), S2 );
     }
 }
 
-int main() 
-{
-    string S( "Hello world, world, world" );
-    string S1( "world" );
-    string S2( "mccdlibby" );
+int main() {
+    string S; 
+    string S1;
+    string S2;
 
-    cout << S << endl;
+    cout << "Enter S: " << endl; 
+    getline(cin, S);
+    cout << "Enter S1: " << endl; 
+    cin >> S1;
+    cout << "Enter S2:" << endl; 
+    cin >> S2;
 
     replace_all( S, S1, S2 );
 
