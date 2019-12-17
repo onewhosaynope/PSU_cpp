@@ -11,7 +11,7 @@ using namespace std;
 int main() {
     int number;
     int tens, units;
-    cout << "\nEnter your integer number (99 < number < 999)";
+    cout << "\nEnter your integer number (99 < number < 999)" << endl;
     cin >> number;
     units = number % 10;
     tens = (number % 100)/10;
