@@ -23,8 +23,7 @@ int main() {
 
 	for(int i = 0; i < N; i++) {
 		x = -5 + rand() % 10;
-		result = (x > 0) ? "true" : "false";
-		cout << x << " : " << result << endl;
+		cout << x << " : " << boolalpha << (x > 0) << endl;
 		if(x > 0)
 			break;
 	}

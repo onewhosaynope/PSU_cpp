@@ -1,9 +1,8 @@
-/**
- * Пазов В.С.
- * File34. 
- * Дан файл целых чисел. 
- * Удалить из него все отрицательные числа.
-**/
+// File25◦. 
+// Дан файл вещественных чисел. 
+// Заменить в нем все элементы на их квадраты.
+// filename: input1.txt output.txt
+
 
 #include <iostream>
 #include <fstream>
@@ -22,9 +21,7 @@ int main(){
     
     while (inputFile.good()) {
         inputFile >> num;
-        if (num > 0) {
-          numbers.push_back(num);
-        }
+        numbers.push_back(pow(num, 2));
     }
     inputFile.close();
 

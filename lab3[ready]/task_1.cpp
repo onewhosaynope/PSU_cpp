@@ -17,7 +17,7 @@ int main() {
     sum = 0;
 
     for (int i = 0; i < 2*N; i++) {
-        sum = sum + pow(N + i, 2);
+        sum += pow(N + i, 2);
     }
 
     cout << "Sum: " << sum;
