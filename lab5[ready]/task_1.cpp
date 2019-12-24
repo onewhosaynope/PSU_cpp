@@ -61,7 +61,7 @@ int solution(int* M, int n) {
     int result = 0;
     
     for (int i = 1; i < n; i++) {
-        if ((M[i] < 0 && M[i - 1] > 0)) {
+        if ((M[i] < 0 && M[i - 1] > 0) || (M[i] > 0 && M[i - 1] < 0)) {
             result = i;
             cout << "breaking at M[" << result << "] with value " << M[i]; 
             break;
