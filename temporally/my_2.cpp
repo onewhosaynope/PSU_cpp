@@ -60,9 +60,13 @@ void array_print(int* M, int n) {
 void solution(int M[], int n, int k) { 
     
     unordered_map<int, int> mp; 
+    cout << "UM" << endl;
   
     for (int i = 0; i < n; ++i) {
-        mp[M[i]]++; 
+        cout << mp[M[i]];
+        mp[M[i]]++;
+        cout << endl;
+
     } 
 
     cout << endl << "Processed array:" << endl;
