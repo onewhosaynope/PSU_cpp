@@ -72,6 +72,6 @@ void solution(int M[], int n, int k) {
             cout << M[i] << " ";
             count = count + 1; 
         } 
-    } 
+    }
     cout << endl << endl << "Size of processed array: " << endl << count << endl;
 } 
