@@ -59,6 +59,6 @@ int main() {
     strncpy (result2, S2, N2);
     reverseChar(result2);
 
-    cout << "Result: " << result1 << result2 << endl;
+    cout << "Result: " << endl << result1 << result2 << endl;
 
 }

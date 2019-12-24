@@ -43,7 +43,7 @@ int main() {
 
 void array_fill(int* M, int n) {
     for(int i = 0; i < n; i++) {
-        cout << "M[" << i << "]";
+        cout << "M[" << i << "] : ";
             cin >> M[i];
     }
 }

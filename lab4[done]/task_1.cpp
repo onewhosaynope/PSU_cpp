@@ -50,7 +50,8 @@ int main () {
   for (int i = 1; i < 7; ++i) {
     cout << "Value e (e>0): ";
     cin >> e;
-  	cout << "Result of arctg(x): " << arctg1(x, e) << endl << endl;    
+  	cout << "Result of arctg(x): " << arctg1(x, e) << endl << endl;
+    cout << "Real arct(x)" << atan(x) << endl;
   }
 
   return 0;
