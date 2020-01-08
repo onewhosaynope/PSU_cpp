@@ -11,7 +11,14 @@
 
 using namespace std;
 
+int solution();
+
 int main(){
+  solution();  
+  return 0;
+}
+
+int solution() {
   vector<int>numbers;
   int num;
   
@@ -34,6 +41,5 @@ int main(){
   } else {
       cout << "Unable to open file";
   }
-  
   return 0;
 }
