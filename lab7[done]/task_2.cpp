@@ -1,6 +1,6 @@
 /**
  * Пазов В.С.
- * String36 (работа с массивом символов)
+ * String36 (работа с строкойё)
  * Даны  строки S, S и S1.
  * Заменить в строке S вхождения
  * строки S1 на строку S2.
@@ -14,7 +14,9 @@ using namespace std;
 string replace(string S, string S1, string S2) { 
     string result = "";
     string word = ""; 
+
     for (int i = 0; i < S.length(); i++) { 
+
         if (S[i] == ' ' || S[i] == ',' || S[i] == '.' || i == S.length()) { 
             
             if (word == S1) {
